@@ -1,79 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+	<title>Bpanel | Demo</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="shortcut icon" href="http://msdhosting.tk/favicon.ico" />
+	<link type="text/css" rel="stylesheet" href="http://msdhosting.tk/cpanel/css/login.css" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>  <script type="text/javascript" src="/scripts/functions.js"></script>   </head>
+<body> 
+<!-- Top navigation bar --> 
+<div id="topNav">
+	<div class="fixed">
+		<div class="wrapper">
+			<div class="backTo">
+				<a href="http://msdhosting.tk" title="">
+					<img src="http://msdhosting.tk/cpanel/img/mainWebsite.png" alt="" />
+					<span>Main website</span>
+				</a>
+				<a href="http://cpanel.msdhosting.tk/" title="">
+					<img src="http://msdhosting.tk/cpanel/img/settings.png" alt="" />
+					<span>Panel</span>
+				</a>
+			</div>
+			<div class="userNav">
+				<a href="#" title="" target="_blank">
+					<img src="http://msdhosting.tk/cpanel/img/help.png" alt="" />
+					<span>Help</span>
+				</a>
+			</div>
+			<div class="fix"></div>
+		</div>
+	</div>
+</div> 
+<!-- Login form area -->
+<div class="loginLogo">
+	<img src="http://static.main-hosting.com/r/368/6/36806/theme/8ee55c4375b723f643224e1c43667781.png" alt=""/>
+</div> 
+<div class="loginWrapper">
+	<div class="head">
+		<h5 class="iUser">MSD Hosting | Login</h5>
+	</div>
+	<div class="form"> 
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Bpanel : youhosting login panel" />
+ <form method="post" action="" name="login_form" id="login_form" onSubmit="return ValidateForm();">
+    <table>
+        <tbody>
+            <tr>
+                <td><label class="required" for="email">Email</label></td>
+                <td>
+<input type="text" name="email" id="login_email" value="" class="txt" /></td>
+            </tr>
+            <tr>
+                <td><label class="required" for="password">Password</label></td>
+                <td>
+<input type="password" name="password" id="login_password" value="" class="txt" /></td>
+            </tr>
+            
+                        <tr>
+                <td id="type-label"><label class="required" for="type">Language</label></td>
+                <td>
+<select name="lang" id="lang">
+    <option value="en" label="English" selected="selected">English</option>
+</select></td>
+            </tr>
+            
+            <tr>
+                <td colspan="2" class="tar">
+                    <span class="but">
+                        <button type="button" onclick="window.location = '/auth/remind'; return false;">?</button>
+                    </span>
+                    <span class="but">
+                        <button type="submit">Login</button>
+                    </span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Bpanel</title>
-  </head>
 
-  <body>
+<script type="text/javascript">
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/k-lil/Bpanel">View on GitHub</a>
+function echeck(str) {
+        var err = "Please enter a valid email address";
+		var at="@"
+		var dot="."
+		var lat=str.indexOf(at)
+		var lstr=str.length
+		var ldot=str.indexOf(dot)
+		if (str.indexOf(at)==-1){
+		   alert(err)
+		   return false
+		}
 
-          <h1 id="project_title">Bpanel</h1>
-          <h2 id="project_tagline">youhosting login panel</h2>
+		if (str.indexOf(at)==-1 || str.indexOf(at)==0 || str.indexOf(at)==lstr){
+		   alert(err)
+		   return false
+		}
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/k-lil/Bpanel/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/k-lil/Bpanel/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+		if (str.indexOf(dot)==-1 || str.indexOf(dot)==0 || str.indexOf(dot)==lstr){
+		    alert(err)
+		    return false
+		}
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+		 if (str.indexOf(at,(lat+1))!=-1){
+		    alert(err)
+		    return false
+		 }
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+		 if (str.substring(lat-1,lat)==dot || str.substring(lat+1,lat+2)==dot){
+		    alert(err)
+		    return false
+		 }
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+		 if (str.indexOf(dot,(lat+2))==-1){
+		    alert(err)
+		    return false
+		 }
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+		 if (str.indexOf(" ")!=-1){
+		    alert(err)
+		    return false
+		 }
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+ 		 return true
+	}
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+function ValidateForm(){
+	var emailID=document.login_form.email
+	var ps=document.login_form.password
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Bpanel maintained by <a href="https://github.com/k-lil">k-lil</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+	if ((emailID.value==null)||(emailID.value=="")){
+		alert("Please enter email address");
+		emailID.focus();
+		return false
+	}
+	if (echeck(emailID.value)==false){
+		emailID.focus();
+		return false
+	}
+	if (ps.value==''){
+		ps.focus();
+        alert("Please enter password");
+		return false
+	}
+	return true
+ }
+</script>
+ </div>
+</div>
+<!-- Footer -->
+<div id="footer">
+	<div class="wrapper">
+		<span>&copy;2013 <a href="http://msdhosting.tk/">MSD Hosting</a> | <a href="http://msdhosting.tk/terms/">Terms of Service</a></span>
+	</div>
+</div>
+</body>
 </html>
