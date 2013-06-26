@@ -7,7 +7,46 @@
 	<link type="text/css" rel="stylesheet" href="stylesheets/login.css" />
 	<link type="text/css" rel="stylesheet" href="stylesheets/preview.css" />
 
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>  <script type="text/javascript" src="/scripts/functions.js"></script>   </head>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script> 
+	<script type="text/javascript" src="/scripts/functions.js"></script>   
+			<!-- JQUERY -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		
+		<!-- PREVIEW (REMOVE) -->
+		<script type="text/javascript" src="javascripts/preview.js"></script>
+		<!--[if lt IE 9]>
+			<script type="text/javascript">
+				document.createElement("header");       
+				document.createElement("nav");
+			</script>
+		<![endif]-->
+		
+		<!-- SLIDING TABS CSS SETTINGS -->
+		<link rel="stylesheet" type="text/css" href="css/sliding-tabs/clean_rounded/template.css" />
+		
+		<!-- SLIDING TABS JS -->
+		<script type="text/javascript" src="javascripts/jquery.flashblue-plugins.js"></script>
+		<script type="text/javascript" src="javascripts/jquery.sliding-tabs.js"></script>
+		<script type="text/javascript" src="javascripts/jquery.sliding-tabs-touch.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#slidingtabs").slidingTabs({ 
+					tabActive:1, 
+					responsive:true, 
+					touchSupport:true, 
+					tabsAlignment:"align_top", 
+					autoHeight:true, 
+					autoHeightSpeed:300, 
+					textConversion:"pb", 
+					contentEasing:"easeInOutQuart", 
+					orientation:"horizontal"
+				});
+			});
+		</script>
+</head>
+	
 <body> 
 <!-- Top navigation bar --> 
 <div id="topNav">
