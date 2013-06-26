@@ -850,6 +850,7 @@ div.clean_rounded-horizontal > div.st_tabs ul li {
     display: block;
     float: left;
     margin: 0;
+	width: 151px;
 }
 div.clean_rounded-horizontal > div.st_tabs ul li a {
     background: -moz-linear-gradient(center top , #FBFBFB, #F8F8F8) repeat scroll 0 0 transparent;
@@ -899,6 +900,7 @@ div.clean_rounded-horizontal > div.st_views {
     overflow: hidden;
     padding: 0 !important;
     position: relative;
+	width: 300px;
 }
 div.clean_rounded-horizontal.st_sliding_active > div.st_views {
     border-top-right-radius: 0;
