@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5{font-weight:400; margin:0; padding:0}
 
 .fix{clear:both}
 
-.loginWrapper{background:none repeat scroll 0 0 #FAFAFA; border:1px solid #D5D5D5; border-radius:5px 5px 5px 5px; display:block; left:50%; position:absolute; top:50%; border-color:#D5D5D5; margin:-106px 0 0 -160px;}
+.loginWrapper{display:block; left:50%; position:absolute; top:50%; border-color:#D5D5D5; margin:-106px 0 0 -160px;}
 
 .signupWrapper{background:none repeat scroll 0 0 #FAFAFA; border:1px solid #D5D5D5; border-radius:5px 5px 5px 5px; display:block; left:50%; position:absolute; max-height:585px; min-height:50%; top:20%;  border-color:#D5D5D5; bottom:10%;margin:0 0 0 -160px;}
 
