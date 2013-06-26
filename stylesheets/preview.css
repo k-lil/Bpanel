@@ -869,7 +869,7 @@ div.clean_rounded-horizontal > div.st_tabs ul li a:hover {
     color: #333333;
 }
 div.clean_rounded-horizontal > div.st_tabs ul li a.st_tab_first {
-    border-left: 55px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
     border-top-left-radius: 5px;
 }
 div.clean_rounded-horizontal.st_sliding_active > div.st_tabs ul li a.st_tab_first {
