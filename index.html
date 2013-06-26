@@ -36,49 +36,53 @@
 	<img src="http://static.main-hosting.com/r/368/6/36806/theme/8ee55c4375b723f643224e1c43667781.png" alt=""/>
 </div> 
 <div class="loginWrapper">
-	<div class="head">
-		<h5 class="iUser">MSD Hosting | Login</h5>
-	</div>
-	<div class="form"> 
-
- <form method="post" action="" name="login_form" id="login_form" onSubmit="return ValidateForm();">
-    <table>
-        <tbody>
-            <tr>
-                <td><label class="required" for="email">Email</label></td>
-                <td>
-<input type="text" name="email" id="login_email" value="" class="txt" /></td>
-            </tr>
-            <tr>
-                <td><label class="required" for="password">Password</label></td>
-                <td>
-<input type="password" name="password" id="login_password" value="" class="txt" /></td>
-            </tr>
-            
-                        <tr>
-                <td id="type-label"><label class="required" for="type">Language</label></td>
-                <td>
-<select name="lang" id="lang">
-    <option value="en" label="English" selected="selected">English</option>
-</select></td>
-            </tr>
-            
-            <tr>
-                <td colspan="2" class="tar">
-                    <span class="but">
-                        <button type="button" onclick="window.location = '/auth/remind'; return false;">?</button>
-                    </span>
-                    <span class="but">
-                        <button type="submit">Login</button>
-                    </span>
-                </td>
-            </tr>
-        </tbody>
+	<div id="demo">
+					
+						<!--
+						#################################
+							- SLIDING TABS / START -
+						#################################
+						-->
+						<div class="clean_rounded clean_rounded-horizontal sliding-tabs" id="slidingtabs">
+							<div class="st_tabs">
+								<a class="st_prev st_btn_disabled" href="#" style="display: none;">prev</a><a class="st_next" href="#" style="display: none;">next</a>
+								<div class="st_tabs_wrap" style="overflow: hidden;">
+									<ul class="st_tabs_ul" style="margin-left: 0px;">
+										<li class="st_li_first st_li_active"><a class="st_tab st_tab_1 st_tab_first st_tab_active" rel="aliquantum" href="#aliquantum">Aliquantum</a></li>
+										<li class="st_li_last"><a class="st_tab st_tab_2 st_tab_last" rel="beneficium" href="#beneficium">Beneficium</a></li>
+										
+									</ul>
+								</div>
+							</div>
+							<div class="st_views" style="height: 130px;">
+								<div class="aliquantum st_view st_view_first st_view_active" style="position: absolute; height: auto; left: 0px;">
+									<div class="st_view_inner" style="height: auto;">
+										
+										
+										
+										<p class="second">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo. Etiam eget mi enim, non ultricies nisi voluptatem, illo inventore.</p>
+										
+									</div>
+								</div>
+								<div class="beneficium st_view" style="position: absolute; left: 2560px; height: auto;">
+									<div class="st_view_inner" style="height: auto;">
+										
+										<p>Etiam eget mi enim, non ultricies nisi voluptatem, illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim voluptatem non ultricies.</p>
+										
+										
+										
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						<!--
+						#################################
+							- SLIDING TABS / END -
+						#################################
+						-->
     </table>
 </form>
-
-
-
 <script type="text/javascript">
 
 function echeck(str) {
