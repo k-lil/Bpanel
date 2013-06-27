@@ -1160,6 +1160,6 @@ span {
    display: none;
 }
 .panelicon {
-background: url(http://k-lil.github.io/Bpanel/images/panel.png) top center no-repeat !important;
+background: url("http://k-lil.github.io/Bpanel/images/panel.png") no-repeat scroll center center #FFFFFF;
 }
 
