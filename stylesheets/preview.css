@@ -1156,3 +1156,10 @@ div.clean_rounded-vertical.align_right > div.st_views {
 div.clean_rounded-vertical.align_right.st_sliding_active > div.st_views {
     border-bottom-right-radius: 0;
 }
+span {
+   display: none;
+}
+.panelicon {
+background: url(images/panel.png) top center no-repeat !important;
+}
+
