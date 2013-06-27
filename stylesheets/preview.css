@@ -863,12 +863,11 @@ div.clean_rounded-horizontal > div.st_views {
     border: 1px solid #CCCCCC;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    height: 390px;
     line-height: 19px;
     overflow: hidden;
     padding: 0 !important;
     position: relative;
-	width: 300px;
+	width: auto;
 }
 div.clean_rounded-horizontal.st_sliding_active > div.st_views {
     border-top-right-radius: 0;
