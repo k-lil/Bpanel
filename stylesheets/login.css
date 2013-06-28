@@ -118,3 +118,10 @@ div.form .info h3, div.form .error h3, div.form .success h3, div.form .info p, d
 .backTo span, .userNav span{display:block; float:left; padding:10px 14px 8px 8px}
 
 .backTo img, .userNav img{display:block; float:left; margin:13px 2px 11px 14px}
+
+.user {
+    background: url("../images/user.png") no-repeat scroll 0 0 transparent;
+}
+.password {
+    background: url("../images/password.png") no-repeat scroll 0 0 transparent;
+}
