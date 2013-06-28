@@ -87,7 +87,7 @@
 									<ul class="st_tabs_ul" style="margin-left: 0px;">
 										<li class="st_li_first st_li_active"><a class="st_tab st_tab_1 st_tab_first st_tab_active" rel="Cpanel" href="#Cpanel"><i class="icon-cog icon-2x"></a></i>
 										<li class="st_li_last"><a class="st_tab st_tab_2" rel="Webmail" href="#Webmail"><i class="icon-envelope icon-2x"></a></i>
-										<li class=""><a class="st_tab st_tab_3" rel="Reminder" href="#Reminder "><i class="icon-info-sign icon-2x"></a></i>										
+										<li class=""><a class="st_tab st_tab_3" rel="Reminder" href="#Reminder "><i class="icon-info-sign icon-2x"></a></i></ul>
 									</ul>
 								</div>
 							</div>
@@ -120,7 +120,17 @@
 										
 									</div>
 								</div>
-                            </div>
+								<div class="Reminder st_view">
+									<div class="st_view_inner">
+<form enctype="application/x-www-form-urlencoded" action="http://cpanel.main-hosting.com/auth/remind" method="post">
+<p class="element">
+<label for="email">Email address</label><br/>
+<input type="text" name="email" id="email" value=""></p>
+
+<input type="submit" name="submit" id="submit" value="Reset"></form>
+									</div>
+								</div>
+							</div>
 						</div>
 						<!--
 						#################################
