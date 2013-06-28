@@ -133,3 +133,19 @@ div.form .info h3, div.form .error h3, div.form .success h3, div.form .info p, d
     text-shadow: 1px 1px 0 #FFFFFF;
     width: auto;
 }
+a#feedbackright {
+background:url("images/feedback_tab_white.png") no-repeat scroll 50% 50% #0066CC;
+display:block;
+height:90px;
+line-height:0;
+padding:5px;
+position:fixed;
+right:0;
+/*left:0;*/
+text-indent:-99999px;
+top:50%;
+width:22px;
+}
+a#feedbackright:hover {
+background-color:#FF8B00;
+}
