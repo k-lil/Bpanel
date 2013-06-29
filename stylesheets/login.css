@@ -130,7 +130,6 @@ div.form .info h3, div.form .error h3, div.form .success h3, div.form .info p, d
     line-height: 19px;
     margin: 12px auto;
     text-align: center;
-    text-shadow: 1px 1px 0 #FFFFFF;
     width: auto;
 }
 a#feedbackright {
