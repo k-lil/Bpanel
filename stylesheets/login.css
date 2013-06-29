@@ -4,7 +4,7 @@ html, body{height:100%!important; min-height:100%}
 
 body, form{margin:0; padding:0}
 
-body{background:url(images/bg.jpg) repeat scroll 0 0 transparent; background-size:cover; color:#424242; font-family:Arial,Helvetica,sans-serif; font-size:12px; line-height:20px; min-height:100%; position:relative; margin:0; padding:0}
+body{background:url(../images/bg.jpg) repeat scroll 0 0 transparent; background-size:cover; color:#424242; font-family:Arial,Helvetica,sans-serif; font-size:12px; line-height:20px; min-height:100%; position:relative; margin:0; padding:0}
 
 div, input, textarea, select{color:#737373; font-family:arial; font-size:12px; position:relative}
 
@@ -134,7 +134,7 @@ div.form .info h3, div.form .error h3, div.form .success h3, div.form .info p, d
     width: auto;
 }
 a#feedbackright {
-background:url("images/feedback_tab_white.png") no-repeat scroll 50% 50% #0066CC;
+background:url("../images/feedback_tab_white.png") no-repeat scroll 50% 50% #0066CC;
 display:block;
 height:90px;
 line-height:0;
