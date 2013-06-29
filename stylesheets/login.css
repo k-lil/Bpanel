@@ -109,7 +109,9 @@ div.form .info h3, div.form .error h3, div.form .success h3, div.form .info p, d
 
 #footer span a{color:#EEE}
 
-.logo, .userNav{background:none repeat scroll 0 0 transparent; border:0 none; font-size:100%; outline:0 none; vertical-align:baseline; margin:0; padding:0}
+.wrapper .logo {background:none repeat scroll 0 0 transparent; float: left; order:0 none; font-size:100%; outline:0 none; vertical-align:baseline; margin:0; padding:0}
+
+.wrapper .userNav{background:none repeat scroll 0 0 transparent; float: right; border:0 none; font-size:100%; outline:0 none; vertical-align:baseline; margin:0; padding:0}
 
 .logoDash, .userNavDash{text-align:center; margin:10px}
 
