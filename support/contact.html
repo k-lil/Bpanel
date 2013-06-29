@@ -1,0 +1,67 @@
+<div id="api-public-ticket">
+<form method="post" action="http://api.main-hosting.com/v-2/contact-form">
+    <fieldset>
+        
+        <legend>Submit new ticket</legend>
+
+        <div class="api_input api_author_email">
+            <label for="api_author_email">Your E-mail</label>
+            <input name="author_email" id="api_author_email" type="text" value=""/>
+        </div>
+
+        <div class="api_input api_author_name">
+            <label for="api_author_name">Your Name</label>
+            <input name="author_name" id="api_author_name" type="text" value=""/>
+        </div>
+
+        <div class="api_input api_subject">
+            <label for="api_subject">Subject</label>
+            <input name="subject" id="api_subject" type="text" value=""/>
+        </div>
+
+        <div class="api_input api_content">
+            <label for="api_content">Message</label>
+            <textarea name="content" id="api_content" cols="25" rows="5"></textarea>
+        </div>
+
+        <div class="api_input api_captcha">
+            <label for="api_captcha">Type the characters you see in the picture below</label>
+            <img src="http://api.main-hosting.com/captcha" alt="Captcha" class="api_captcha"/>
+            <input name="captcha" id="api_captcha" type="text" id="api_captcha"/>
+        </div>
+
+        <div class="api_input api_submit">
+            <label>&nbsp;</label>
+            <button type="submit">Submit</button>
+        </div>
+        
+    </fieldset>
+</form>
+</div>
+<script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script type = "text/javascript">
+
+$(function() {
+    $.urlParam = function(name){
+        var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+        if(results) {
+            return results[1] || 0;
+        }
+        return '';
+    }
+    
+    $('#api-public-ticket form input, #api-public-ticket form textarea').each(function(){
+        var v = $.urlParam($(this).attr('name'));
+        if(v) {
+            $(this).val(decodeURIComponent(v.replace(/+/g, ' ')));
+        }
+    });
+    
+	var err = $.urlParam('error_msg');
+	if(err) {
+        $('<div class="error">').text(decodeURIComponent(err.replace(/+/g, ' ')))
+        .prependTo('#api-public-ticket');
+    }
+});
+
+</script>
