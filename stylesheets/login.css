@@ -132,7 +132,7 @@ div.form .info h3, div.form .error h3, div.form .success h3, div.form .info p, d
     text-align: center;
     width: auto;
 }
-a#feedbackright {
+a#feedbackleft {
 background:url("../images/feedback_tab_white.png") no-repeat scroll 50% 50% #0066CC;
 display:block;
 height:90px;
