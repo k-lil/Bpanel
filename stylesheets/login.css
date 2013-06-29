@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5{font-weight:400; margin:0; padding:0}
 
 .topmenu{background:none repeat scroll 0 0 rgba(10, 10, 10, 0.9); opacity: 0.8; color:#EEE; position:fixed; width:100%; z-index:999}
 
-.backTo a{border-left:1px solid #2F2F2F; border-right:1px solid #2F2F2F; color:#EEE; float:left; font-size:11px; margin:0; padding:0}
+.logo a{border-left:1px solid #2F2F2F; border-right:1px solid #2F2F2F; color:#EEE; float:left; font-size:11px; margin:0; padding:0}
 
 .userNav a{border-left:1px solid #2F2F2F; border-right:1px solid #2F2F2F; color:#EEE; float:right; font-size:11px; margin:0; padding:0}
 
@@ -109,15 +109,15 @@ div.form .info h3, div.form .error h3, div.form .success h3, div.form .info p, d
 
 #footer span a{color:#EEE}
 
-.backTo, .userNav{background:none repeat scroll 0 0 transparent; border:0 none; font-size:100%; outline:0 none; vertical-align:baseline; margin:0; padding:0}
+.logo, .userNav{background:none repeat scroll 0 0 transparent; border:0 none; font-size:100%; outline:0 none; vertical-align:baseline; margin:0; padding:0}
 
-.backToDash, .userNavDash{text-align:center; margin:10px}
+.logoDash, .userNavDash{text-align:center; margin:10px}
 
-.backTo a:hover, .userNav a:hover{background:none repeat scroll 0 0 #212121}
+.logo a:hover, .userNav a:hover{background:none repeat scroll 0 0 #212121}
 
-.backTo span, .userNav span{display:block; float:left; padding:10px 14px 8px 8px}
+.logo span, .userNav span{display:block; float:left; padding:10px 14px 8px 8px}
 
-.backTo img, .userNav img{display:block; float:left; margin:13px 2px 11px 14px}
+.logo img, .userNav img{display:block; float:left; margin:13px 2px 11px 14px}
 
 .user {
     background: url("../images/user.png") no-repeat scroll 0 0 transparent;
