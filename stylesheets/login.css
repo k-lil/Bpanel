@@ -139,7 +139,7 @@ div.form .info h3, div.form .error h3, div.form .success h3, div.form .info p, d
     width: auto;
 }
 a#feedbackleft {
-background:url("../images/feedback_tab_white.png") no-repeat scroll 50% 50% #0066CC;
+background:url("../images/feedback_tab_white.png") no-repeat scroll 50% 50% rgba(10, 10, 10, 0.9);
 display:block;
 height:90px;
 line-height:0;
@@ -151,5 +151,5 @@ top:40%;
 width:22px;
 }
 a#feedbackleft:hover {
-background-color:#FF8B00;
+background-color:rgba(10, 10, 10, 0.9);
 }
