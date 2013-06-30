@@ -29,8 +29,6 @@ h1, h2, h3, h4, h5{font-weight:400; margin:0; padding:0}
 
 .topmenu{background:none repeat scroll 0 0 rgba(10, 10, 10, 0.9); opacity: 0.8; color:#EEE; position:fixed; width:100%; z-index:999}
 
-.logo a{border-left:1px solid #2F2F2F; border-right:1px solid #2F2F2F; color:#EEE; float:left; font-size:11px; margin:0; padding:0}
-
 .userNav a{border-left:1px solid #2F2F2F; border-right:1px solid #2F2F2F; color:#EEE; float:right; font-size:11px; margin:0; padding:0}
 
 .fix{clear:both}
@@ -123,7 +121,7 @@ div.form .info h3, div.form .error h3, div.form .success h3, div.form .info p, d
 .userNav a:hover{background:none repeat scroll 0 0 #212121}
 
 .userNav span{display:block; float:left; padding:10px 14px 8px 8px}
-.logo span {display:block; float:left; padding:10px 14px 8px 8px}
+.logo span {font-family: 'Montserrat Alternates',sans-serif; font-size: 20px; display:block; float:left; padding:10px 14px 8px 8px}
 
 .userNav img{display:block; float:left; margin:13px 2px 11px 14px}
 
