@@ -749,46 +749,6 @@ div.clean_rounded-horizontal {
     position: relative;
     width: 100%;
 }
-div.clean_rounded-horizontal > div.st_tabs a.st_prev, div.clean_rounded-horizontal > div.st_tabs a.st_next {
-    background: url("images/arrows_h.gif") no-repeat scroll 0 0 #FFFFFF;
-    border: 1px solid #CCCCCC;
-    display: none;
-    height: 43px;
-    outline: medium none;
-    position: absolute;
-    text-indent: -999em;
-    top: 0;
-    width: 43px;
-    z-index: 110;
-}
-div.clean_rounded-horizontal > div.st_tabs a.st_prev {
-    background-position: center 15px;
-    border-top-left-radius: 5px;
-    left: 0;
-}
-div.clean_rounded-horizontal > div.st_tabs a.st_prev:hover {
-    background-color: #F8F8F8;
-    background-position: center -45px;
-}
-div.clean_rounded-horizontal > div.st_tabs a.st_next {
-    background-position: center -15px;
-    border-top-right-radius: 5px;
-    right: 0;
-}
-div.clean_rounded-horizontal > div.st_tabs a.st_next:hover {
-    background-color: #F8F8F8;
-    background-position: center -75px;
-}
-div.clean_rounded-horizontal > div.st_tabs a.st_prev.st_btn_disabled, div.clean_rounded-horizontal > div.st_tabs a.st_next.st_btn_disabled {
-    background-color: #F8F8F8;
-    cursor: default;
-}
-div.clean_rounded-horizontal > div.st_tabs a.st_prev.st_btn_disabled {
-    background-position: center -105px;
-}
-div.clean_rounded-horizontal > div.st_tabs a.st_next.st_btn_disabled {
-    background-position: center -135px;
-}
 div.clean_rounded-horizontal > div.st_tabs {
     height: 45px;
     margin-bottom: -1px;
@@ -892,18 +852,9 @@ div.clean_rounded-horizontal > div.st_views div.st_view_first {
 div.clean_rounded-horizontal.align_bottom {
     margin-bottom: 44px;
 }
-div.clean_rounded-horizontal.align_bottom > div.st_tabs a.st_prev {
-    border-bottom-left-radius: 5px;
-}
-div.clean_rounded-horizontal.align_bottom > div.st_tabs a.st_next {
-    border-bottom-right-radius: 5px;
-}
 div.clean_rounded-horizontal.align_bottom > div.st_tabs a.st_prev, div.clean_rounded-horizontal.align_bottom > div.st_tabs a.st_next, div.clean_rounded-horizontal.align_bottom.st_sliding_active > div.st_tabs, div.clean_rounded-horizontal.align_bottom > div.st_tabs div.st_views {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-}
-div.clean_rounded-horizontal.align_bottom > div.st_tabs a.st_prev {
-    border-bottom-left-radius: 5px;
 }
 div.clean_rounded-horizontal.align_bottom > div.st_tabs {
     bottom: -44px;
@@ -949,53 +900,6 @@ div.clean_rounded-vertical {
     clear: both;
     position: relative;
     width: 100%;
-}
-div.clean_rounded-vertical > div.st_tabs a.st_prev, div.clean_rounded-vertical > div.st_tabs a.st_next {
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    background: url("images/arrows_v.gif") no-repeat scroll 0 0 #FFFFFF;
-    border-color: -moz-use-text-color #CCCCCC #CCCCCC;
-    border-image: none;
-    border-right: 1px solid #CCCCCC;
-    border-style: none solid solid;
-    border-width: 0 1px 1px;
-    display: none;
-    float: left;
-    height: 32px;
-    outline: medium none;
-    position: relative;
-    text-indent: -999em;
-    width: 95px;
-    z-index: 100;
-}
-div.clean_rounded-vertical > div.st_tabs a.st_prev {
-    background-position: center 12px;
-    border-right: 0 none;
-    border-top-left-radius: 5px;
-    margin-left: -1px;
-}
-div.clean_rounded-vertical > div.st_tabs a.st_prev:hover {
-    background-color: #F5F5F5;
-    background-position: center -52px;
-}
-div.clean_rounded-vertical > div.st_tabs a.st_next {
-    background-position: center -20px;
-}
-div.clean_rounded-vertical > div.st_tabs a.st_next:hover {
-    background-color: #F5F5F5;
-    background-position: center -84px;
-}
-div.clean_rounded-vertical > div.st_tabs a.st_prev.st_btn_disabled, div.clean_rounded-vertical > div.st_tabs a.st_next.st_btn_disabled {
-    background-color: #F7F7F7;
-    cursor: default;
-}
-div.clean_rounded-vertical > div.st_tabs a.st_prev.st_btn_disabled {
-    background-position: center -116px;
-}
-div.clean_rounded-vertical > div.st_tabs a.st_next.st_btn_disabled {
-    background-position: center -148px;
 }
 div.clean_rounded-vertical > div.st_tabs {
     border-bottom-left-radius: 5px;
@@ -1107,14 +1011,6 @@ div.clean_rounded-vertical > div.st_views div.st_view_inner {
 }
 div.clean_rounded-vertical > div.st_views div.st_view_first {
     display: block;
-}
-div.clean_rounded-vertical.align_right > div.st_tabs a.st_prev {
-    border-top-left-radius: 0;
-    margin-left: 0;
-}
-div.clean_rounded-vertical.align_right > div.st_tabs a.st_next {
-    border-top-right-radius: 5px;
-    margin-right: -1px;
 }
 div.clean_rounded-vertical.align_right > div.st_tabs {
     border-radius: 0 5px 5px 0;
