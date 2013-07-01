@@ -66,38 +66,9 @@
     </fieldset>
 </form>
 </div>
-<script type="text/javascript" src="SlidePanel%20-%20Help%20Desk_fichiers/jquery.js"></script>
-<script type="text/javascript">
-
-$(function() {
-    $.urlParam = function(name){
-        var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-        if(results) {
-            return results[1] || 0;
-        }
-        return '';
-    }
-    
-    $('#api-public-ticket form input, #api-public-ticket form textarea').each(function(){
-        var v = $.urlParam($(this).attr('name'));
-        if(v) {
-            $(this).val(decodeURIComponent(v.replace(/+/g, ' ')));
-        }
-    });
-    
-	var err = $.urlParam('error_msg');
-	if(err) {
-        $('<div class="error">').text(decodeURIComponent(err.replace(/+/g, ' ')))
-        .prependTo('#api-public-ticket');
-    }
-});
-
-</script>
 </div>
 				</div>
-			</div>
-			<script type="text/javascript"> $(function(){ $('.dialogerror, .dialoginfo, .dialogalert').fadeIn('slow');});</script>
-			
+			</div>			
 			<div id="bottomfooter"><a href="http://www.kayako.com/" class="bottomfooterlink" target="_blank">Powered by Kayako Engage Help Desk Software</a></div>
 		</div>
 	
