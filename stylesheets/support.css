@@ -1,7 +1,3 @@
-#topbanner {
-background-color: #FFFFFF;
-height: 80px;
-}
 #main {
     background-color: white;
     border: 1px solid #CDC6B6;
@@ -1485,7 +1481,7 @@ a:link {
     color: #666666 !important;
 }
 #topbanner {
-    height: 5em;
+    height: 40px;
     position: relative;
 }
 .topbannerchat {
