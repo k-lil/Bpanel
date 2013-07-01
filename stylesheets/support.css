@@ -6,15 +6,6 @@
     position: relative;
 }
 
-#main.chatview {
-    bottom: 0.8em;
-    left: 0.8em;
-    margin: 0;
-    position: fixed;
-    right: 0.8em;
-    top: 0.8em;
-}
-
 .chatview #bottomfooter {
     background: url("http://chat.youhosting.com/__swift/themes/client/images/chatfooterbackground.gif") repeat-x scroll left top white;
     border-top: 1px solid #D9CEBC;
