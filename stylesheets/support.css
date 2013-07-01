@@ -3,3 +3,7 @@ body {
     font-family: Arial,sans-serif;
     line-height: 1;
 }
+#topbannerchat {
+background-color: #FFFFFF;
+height: 80px;
+}
