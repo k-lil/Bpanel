@@ -10,7 +10,7 @@
 		<link rel="stylesheet" type="text/css" media="all" href="../stylesheets/support.css" />
 	</head>
 
-	<body class="chatbodymain" onload="OnLoaded();">
+<body class="chatbodymain" onload="OnLoaded();">
 		<div id="main" class="chatview">
 			<div id="topbanner"><div class="topbannerchat"><img src="http://www.youhosting.com/themes/default/img/logo.png" style="margin:15px" alt="Youhosting logo" id="logo" /></div><div id="topbanneravatarcontainer"><img src="http://chat.youhosting.com/__swift/themes/client/images/space.gif" id="topbanneravatar" width="100" height="100" border="0" /></div></div>
 			<div id="sendemailcontainer">
@@ -37,68 +37,95 @@
 				<div id="chatbox" class="switchingpanel active">
 
 				<!-- BEGIN DIALOG PROCESSING -->
+	<body class="chatbodymain" onload="OnLoaded();">
+		<div id="main" class="chatview">
+			<div id="topbanner"><div class="topbannerchat"><img src="SlidePanel%20-%20Help%20Desk_fichiers/logo.png" style="margin:15px" alt="Youhosting logo" id="logo"></div></div>
+			
+
+			<div id="maincore">
+
+			<div id="chatcore">
+				
+				<div class="switchingpanel active" id="chatbox">
+
+				<!-- BEGIN DIALOG PROCESSING -->
 				
 				
-<form name="chatform" id="chatform" method="post" action="http://chat.youhosting.com/visitor/index.php?/LiveChat/Chat/Start" target="_top" enctype="multipart/form-data" onsubmit="return ValidateChatForm(false);">
-To help us serve you better, please provide some information before we begin your chat.<br /><br />
-<table width="100%"  border="0" cellspacing="1" cellpadding="2">
-	<tr>
-		<td width="100" class="fieldtitle" align="left" valign="middle">Department:</td>
-		<td width="" align="left" valign="middle"><select name="departmentid" class="swiftselect">
-<option value='2' class='deponline'>Sales - Online</option>
-<option value='1' class='deponline'>Support (VIP / SuperVIP only) - Online</option>
+<div id="api-public-ticket">
+<form method="post" action="http://api.main-hosting.com/v-2/contact-form">
+    <fieldset>
+        
+        <legend>Submit new ticket</legend>
 
+        <div class="api_input api_author_email">
+            <label for="api_author_email">Your E-mail</label>
+            <input name="author_email" id="api_author_email" type="text">
+        </div>
 
-</select></td>
-	</tr>
-	<tr>
-		<td><font size="2" face="Verdana, Arial, Helvetica, sans-serif">&nbsp;</font></td>
-		<td>&nbsp;</td>
-	</tr>
-		<tr>
-		<td class="fieldtitle" align="left" valign="middle">Full Name:</td>
-		<td align="left" valign="middle"><input type="text" name="fullname" id="chatfullname" class="swifttext required" value=""></td>
-	</tr>
-	
-		<tr>
-		<td class="fieldtitle" align="left" valign="middle">Email:</td>
-		<td align="left" valign="middle"><input type="text" name="email" id="chatemail" class="swifttext required email" value=""></td>
-	</tr>
-	
-	
-		<tr>
-		<td class="fieldtitle" align="left" valign="middle">Domain Name:</td>
-		<td align="left" valign="middle"><input type="text" name="subject" id="chatsubject" class="swifttext" value=""></td>
-	</tr>
-	
-	</table>
-	
-	<table width="100%"  border="0" cellspacing="1" cellpadding="2">
-	<tr>
-		<td width="100" class="fieldtitle" align="left" valign="middle">&nbsp;</td>
-		<td align="left" valign="middle"><input type="submit" class="rebuttonblue" value="Start Chat" /></td>
-	</tr>
-	<tr>
-		<td colspan="2">&nbsp;</td>
-	</tr>
-	<tr>
-		<td colspan="2"><div id="chaterror" class="errorrowhidden">One of the required field(s) is empty</div><div id="chatemailerror" class="errorrowhidden">Specified email address is invalid</div></td>
-	</tr>
-</table>
+        <div class="api_input api_author_name">
+            <label for="api_author_name">Your Name</label>
+            <input name="author_name" id="api_author_name" type="text">
+        </div>
 
+        <div class="api_input api_subject">
+            <label for="api_subject">Subject</label>
+            <input name="subject" id="api_subject" type="text">
+        </div>
 
+        <div class="api_input api_content">
+            <label for="api_content">Message</label>
+            <textarea name="content" id="api_content" cols="25" rows="5"></textarea>
+        </div>
 
-<input type="hidden" name="sessionid" value="unoz6bk9qi1vqbm2anbmtbnokktrrbpb">
-<input type="hidden" name="prompttype" value="chat">
-<input type="hidden" name="filterdepartmentid" value="">
+        <div class="api_input api_captcha">
+            <label for="api_captcha">Type the characters you see in the picture below</label>
+            <img src="SlidePanel%20-%20Help%20Desk_fichiers/captcha.png" alt="Captcha" class="api_captcha">
+            <input name="captcha" id="api_captcha" type="text">
+        </div>
+
+        <div class="api_input api_submit">
+            <label>&nbsp;</label>
+            <button type="submit">Submit</button>
+        </div>
+        
+    </fieldset>
 </form>
+</div>
+<script type="text/javascript" src="SlidePanel%20-%20Help%20Desk_fichiers/jquery.js"></script>
+<script type="text/javascript">
+
+$(function() {
+    $.urlParam = function(name){
+        var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+        if(results) {
+            return results[1] || 0;
+        }
+        return '';
+    }
+    
+    $('#api-public-ticket form input, #api-public-ticket form textarea').each(function(){
+        var v = $.urlParam($(this).attr('name'));
+        if(v) {
+            $(this).val(decodeURIComponent(v.replace(/+/g, ' ')));
+        }
+    });
+    
+	var err = $.urlParam('error_msg');
+	if(err) {
+        $('<div class="error">').text(decodeURIComponent(err.replace(/+/g, ' ')))
+        .prependTo('#api-public-ticket');
+    }
+});
+
+</script>
 </div>
 				</div>
 			</div>
 			<script type="text/javascript"> $(function(){ $('.dialogerror, .dialoginfo, .dialogalert').fadeIn('slow');});</script>
 			
-			<div id="bottomfooter"><a href="http://www.kayako.com" class="bottomfooterlink" target="_blank">Powered by Kayako Engage Help Desk Software</a></div>
+			<div id="bottomfooter"><a href="http://www.kayako.com/" class="bottomfooterlink" target="_blank">Powered by Kayako Engage Help Desk Software</a></div>
 		</div>
-	</body>
+	
 
+</body>
 </html>
