@@ -8,7 +8,7 @@ body {
     min-width: 1020px;
 }
 .chatbodymain {
-    background: url("http://chat.youhosting.com/__swift/themes/client/images/mainbackground.gif") repeat scroll 0 0 white;
+    background: url("../images/supportbg.jpg") repeat scroll 0 0 white;
 }
 #main {
     background-color: white;
