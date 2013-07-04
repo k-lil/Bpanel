@@ -26,8 +26,8 @@ h1, h2, h3, h4, h5{font-weight:400; margin:0; padding:0}
 #main{height:509px; position:absolute; top:50%; width:100%; margin:0 auto}
 
 .wraptop{width:940px; margin:auto}
-.wrapfooter{width:940px; margin:auto}
 
+.wrapfooter{width:940px; margin:auto}
 
 #topNav{display:block; height:36px}
 
@@ -160,5 +160,11 @@ background-color:rgba(10, 10, 10, 0.9);
 opacity: 0.9;
 }
 .copyright {
+float: left;
+}
 
+.fb_iframe_widget {
+    display: inline-block;
+    float: right;
+    position: relative;
 }
