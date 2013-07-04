@@ -164,7 +164,7 @@ float: left;
 }
 
 .fb_iframe_widget {
-    display: inline-block;
-    float: right;
-    position: relative;
+display: inline-block;
+float: right;
+position: relative;
 }
