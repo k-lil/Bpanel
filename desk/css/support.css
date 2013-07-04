@@ -1329,6 +1329,7 @@ button.ui-button::-moz-focus-inner {
     margin: -1px;
 }
 body {
+    background: url("../images/supportbg.jpg") repeat scroll 0 0 white;
     font-family: verdana,arial,helvetica,sans-serif;
     margin: 0;
     padding: 0;
@@ -1337,9 +1338,7 @@ body {
     background: url("http://chat.youhosting.com/__swift/themes/client/images/mainbackground.gif") repeat scroll 0 0 white;
     min-width: 1020px;
 }
-.chatbodymain {
-    background: url("../images/supportbg.jpg") repeat scroll 0 0 white;
-}
+
 #main {
     background-color: white;
     border: 1px solid #CDC6B6;
