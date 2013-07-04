@@ -1,0 +1,19 @@
+{
+  "name": "desk",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": true,
+  "glyphs": [
+    {
+      "uid": "9f7e588c66cfd6891f6f507cf6f6596b",
+      "css": "phone",
+      "code": 59392,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "2f9f67ee4354feef8c1f51e03bac6ef3",
+      "css": "lifebuoy",
+      "code": 59393,
+      "src": "entypo"
+    }
+  ]
+}
