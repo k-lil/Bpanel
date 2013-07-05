@@ -2305,7 +2305,7 @@ input, textarea, select {
     font-size: 11px;
     height: 38px;
     margin: 0;
-    padding: 0 45px;
+    padding: 0;
     vertical-align: middle;
-    width: 100px;
+    width: 100%;
 }
