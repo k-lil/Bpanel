@@ -1,6 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Electrolize);
-@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates:700);
-
+@import url(../stylesheets/fonts.css);
 html, body{height:100%!important; min-height:100%}
 
 body, form{margin:0; padding:0}
