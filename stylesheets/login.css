@@ -128,12 +128,6 @@ float: left;
 .input-append input[class*="span"], .input-append .uneditable-input[class*="span"], .input-prepend input[class*="span"], .input-prepend .uneditable-input[class*="span"], .row-fluid input[class*="span"], .row-fluid select[class*="span"], .row-fluid textarea[class*="span"], .row-fluid .uneditable-input[class*="span"], .row-fluid .input-prepend [class*="span"], .row-fluid .input-append [class*="span"] {
     display: inline-block;
 }
-input.span2, textarea.span2, .uneditable-input.span2 {
-    width: 156px;
-}
-input.span2, textarea.span2, .uneditable-input.span2 {
-    width: 156px;
-}
 .input-append input, .input-prepend input, .input-append select, .input-prepend select, .input-append .uneditable-input, .input-prepend .uneditable-input {
     border-radius: 0 4px 4px 0;
     margin-bottom: 0;
@@ -143,11 +137,9 @@ input.span2, textarea.span2, .uneditable-input.span2 {
 .input-append input, .input-prepend input, .input-append select, .input-prepend select, .input-append .uneditable-input, .input-prepend .uneditable-input, .input-append .dropdown-menu, .input-prepend .dropdown-menu, .input-append .popover, .input-prepend .popover {
     font-size: 14px;
 }
+
 input.span2, textarea.span2, .uneditable-input.span2 {
-    width: 126px;
-}
-input.span2, textarea.span2, .uneditable-input.span2 {
-    width: 126px;
+    width: auto;
 }
 input[class*="span"], select[class*="span"], textarea[class*="span"], .uneditable-input[class*="span"], .row-fluid input[class*="span"], .row-fluid select[class*="span"], .row-fluid textarea[class*="span"], .row-fluid .uneditable-input[class*="span"] {
     float: none;
