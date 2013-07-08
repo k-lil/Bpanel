@@ -1,4 +1,5 @@
 @import url(../stylesheets/fonts.css);
+
 html, body{height:100%!important; min-height:100%}
 
 body, form{margin:0; padding:0}
@@ -160,7 +161,20 @@ opacity: 0.9;
 .copyright {
 float: left;
 }
-
+.add-on {
+    background-color: #EEEEEE;
+    border: 1px solid #CCCCCC;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    height: 20px;
+    line-height: 20px;
+    min-width: 16px;
+    padding: 4px 5px;
+    text-align: center;
+    text-shadow: 0 1px 0 #FFFFFF;
+    width: auto;
+}	
 .fb_iframe_widget {
 display: inline-block;
 float: right;
