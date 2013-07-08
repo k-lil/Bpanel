@@ -40,51 +40,6 @@ h1, h2, h3, h4, h5{font-weight:400; margin:0; padding:0}
 
 .signupWrapper{background:none repeat scroll 0 0 #FAFAFA; border:1px solid #D5D5D5; border-radius:5px 5px 5px 5px; display:block; left:50%; position:absolute; max-height:585px; min-height:50%; top:20%;  border-color:#D5D5D5; bottom:10%;margin:0 0 0 -160px;}
 
-
-.loginLogo{display:block; height:44px; left:42.5%; right:42.5%; top:5%; width:15%}
-.loginLogo img{width:100%;}
-
-
-.head{background:url(http://up.h213.info/img/leftNavBg.png) repeat-x scroll 0 0 #EFEFEF; border-radius:5px 5px 0 0; border-bottom:1px solid #D5D5D5;  position:relative}
-
-.text{height:300px !important;}
-
-.signup{ height:92% !important; width:310px !important;}
-
-.form{background:url(images/form.png) no-repeat scroll 0 0 transparent;  overflow:auto; width:310px;}
-
-.form p{color:#424242; font-size:12px; font-weight:700; font-family:Electrolize,sans-serif; padding:5px 10px; margin:0;}
-
-.form .logo{height:58px; text-align:center; margin:23px auto 43px}
-
-.form table{border-collapse:collapse; width:100%}
-
-.form tr{border-bottom:1px solid #E7E7E7; position:relative; padding:10px 0}
-
-.form td{color:#424242; font-size:12px; font-weight:700; font-family:Electrolize,sans-serif; padding:10px 10px}
-
-.form input{padding:1px 5px 2px}
-
-.form input.txt{width:180px; height:25px}
-
-.form select{width:192px}
-
-.form span.but{background:url(images/button-2.png) no-repeat scroll 100% 0 transparent; display:inline-block; padding:0 5px 0 0}
-
-.form span.but button{background:linear-gradient(#FCFCFC,#F0F0F0) repeat scroll 0 0 transparent; background-color:#F9F9F9; border-radius:3px 3px 3px 3px; border:1px solid #4F5A68; color:#606060; height:31px; margin:0 0 0 10px; padding:0 10px 0 10px}
-
-form{padding:0}
-
-.iUser{background:url(http://up.h213.info/img/user.png) no-repeat scroll 12px center transparent}
-
-.head h5{font-weight:400; font-size:14px; padding:9px 12px 9px 35px;}
-
-.tac{text-align:center}
-
-.tar{text-align:right}
-
-.tal{text-align:left}
-
 #foot{padding-top:13px; text-align:right; width:955px; margin:0 auto}
 
 ul.errors{font-size:.7em; list-style-type:none; margin:0; padding:0}
