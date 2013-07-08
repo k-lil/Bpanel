@@ -128,12 +128,6 @@ div.form .info h3, div.form .error h3, div.form .success h3, div.form .info p, d
 
 .userNav img{display:block; float:left; margin:13px 2px 11px 14px}
 
-.user {
-    background: url("../images/user.png") no-repeat scroll 0 0 transparent;
-}
-.password {
-    background: url("../images/password.png") no-repeat scroll 0 0 transparent;
-}
 #bottom_text {
     display: block;
     line-height: 19px;
