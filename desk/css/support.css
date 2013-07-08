@@ -1,67 +1,76 @@
 body {
-    background: url("../images/supportbg.jpg") repeat scroll 0 0 white;
-    font-family: verdana,arial,helvetica,sans-serif;
-    margin: 0;
-    padding: 0;
+background: url("../images/supportbg.jpg") repeat scroll 0 0 white;
+font-family: verdana,arial,helvetica,sans-serif;
+margin: 0;
+padding: 0;
 }
 #main {
-    background-color: white;
-    border: 1px solid #CDC6B6;
-    clear: both;
-    margin: 0.8em;
-    position: relative;
+-moz-border-bottom-colors: none;
+-moz-border-left-colors: none;
+-moz-border-right-colors: none;
+-moz-border-top-colors: none;
+background: linear-gradient(to bottom, #F7F7F7, #F4F4F4) repeat scroll 0 0 padding-box transparent;
+border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.2);
+border-image: none;
+border-radius: 5px 5px 5px 5px;
+border-style: solid;
+border-width: 1px;
+box-shadow: 0 1px 0 #FFFFFF inset;
+clear: both;
+margin: 0.8em;
+position: relative;
 }
 label {
-    cursor: pointer;
+cursor: pointer;
 }
 a:visited {
-    color: #333333;
-    outline: medium none;
-    text-decoration: none;
+color: #333333;
+outline: medium none;
+text-decoration: none;
 }
 a:hover {
-    color: red !important;
-    outline: medium none;
-    text-decoration: none;
+color: red !important;
+outline: medium none;
+text-decoration: none;
 }
 a:link {
-    color: #333333;
-    outline: medium none;
-    text-decoration: none;
+color: #333333;
+outline: medium none;
+text-decoration: none;
 }
 #topbanner {
-    height: 40px;
-    position: relative;
+height: 40px;
+position: relative;
 }
 .topbannerchat {
-    float: left;
-    margin-top: 8px;
+float: left;
+margin-top: 8px;
 }
 #bottomfooter {
-    clear: both;
-    font-size: 70%;
-    margin-top: 2em;
-    text-align: center;
+clear: both;
+font-size: 70%;
+margin-top: 2em;
+text-align: center;
 }
 .bottomfooterpadding {
-    padding: 4px 4px 8px;
+padding: 4px 4px 8px;
 }
 #bottomfooter a {
-    color: #333333;
-    text-decoration: none;
+color: #333333;
+text-decoration: none;
 }
 fieldset {
-    border: medium none;
+border: medium none;
 }
 input, textarea, select {
-    background: none repeat scroll 0 0 #FFFFFF;
-    border: 1px solid #D5D5D5;
-    color: #000000;
-    font-family: Arial,Helvetica,sans-serif;
-    font-size: 11px;
-    height: 38px;
-    margin: 0;
-    padding: 0;
-    vertical-align: middle;
-    width: 100%;
+background: none repeat scroll 0 0 #FFFFFF;
+border: 1px solid #D5D5D5;
+color: #000000;
+font-family: Arial,Helvetica,sans-serif;
+font-size: 11px;
+height: 38px;
+margin: 0;
+padding: 0;
+vertical-align: middle;
+width: 100%;
 }
