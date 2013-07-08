@@ -50,7 +50,9 @@ a:link {
     color: #333333;
     text-decoration: none;
 }
-
+fieldset {
+    border: medium none;
+}
 input, textarea, select {
     background: none repeat scroll 0 0 #FFFFFF;
     border: 1px solid #D5D5D5;
