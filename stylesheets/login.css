@@ -124,6 +124,7 @@ div.form .info h3, div.form .error h3, div.form .success h3, div.form .info p, d
 .userNav a:hover{background:none repeat scroll 0 0 #212121}
 
 .userNav span{display:block; float:left; padding:10px 14px 8px 8px}
+
 .logo span {font-family: 'Montserrat Alternates',sans-serif; font-size: 20px; display:block; float:left; padding:10px 14px 8px 8px}
 
 .userNav img{display:block; float:left; margin:13px 2px 11px 14px}
@@ -204,7 +205,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
     transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
 }
 select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
-    border-radius: 4px 4px 4px 4px;
+    border-radius: 0 4px 4px 0;
     color: #555555;
     display: inline-block;
     font-size: 14px;
