@@ -40,8 +40,6 @@ h1, h2, h3, h4, h5{font-weight:400; margin:0; padding:0}
 
 .signupWrapper{background:none repeat scroll 0 0 #FAFAFA; border:1px solid #D5D5D5; border-radius:5px 5px 5px 5px; display:block; left:50%; position:absolute; max-height:585px; min-height:50%; top:20%;  border-color:#D5D5D5; bottom:10%;margin:0 0 0 -160px;}
 
-#foot{padding-top:13px; text-align:right; width:955px; margin:0 auto}
-
 ul.errors{font-size:.7em; list-style-type:none; margin:0; padding:0}
 
 div.msg a.close{display:none}
@@ -66,6 +64,8 @@ div.form .info h3, div.form .error h3, div.form .success h3, div.form .info p, d
 
 #footer span a{color:#EEE}
 
+#foot{padding-top:13px; text-align:right; width:955px; margin:0 auto}
+
 .wrapper .logo {background:none repeat scroll 0 0 transparent; float: left; order:0 none; font-size:100%; outline:0 none; vertical-align:baseline; margin:0; padding: width: 40%;}
 
 .wrapper .userNav{background:none repeat scroll 0 0 transparent; float: right; border:0 none; font-size:100%; outline:0 none; vertical-align:baseline; margin:0; padding:0}
@@ -84,6 +84,7 @@ div.form .info h3, div.form .error h3, div.form .success h3, div.form .info p, d
 
 .userNav img{display:block; float:left; margin:13px 2px 11px 14px}
 
+form {display: block; height: auto; width: auto;}
 #bottom_text {
     display: block;
     line-height: 19px;
