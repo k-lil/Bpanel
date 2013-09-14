@@ -197,18 +197,7 @@ min-height: 1px;
 }
 input, textarea, .uneditable-input {
 margin-left: 0;
-}
-input, textarea, .uneditable-input {
-margin-left: 0;
-}
-input, textarea, .uneditable-input {
-margin-left: 0;
-}
-input, textarea, .uneditable-input {
-margin-left: 0;
-}
-input, textarea, .uneditable-input {
-width: 206px;
+width: auto;
 }
 button {
 -moz-border-bottom-colors: none;
