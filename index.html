@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Bpanel | Demo</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+title>Bpanel | Demo</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="google-translate-customization" content="91c65af9433f3160-316bd0691b3c1a9b-g4d99efdbaf7b93da-17"></meta>
 	<link rel="shortcut icon" href="favicon.ico" />
 	<link type="text/css" rel="stylesheet" href="stylesheets/login.css" />
 	<link type="text/css" rel="stylesheet" href="stylesheets/preview.css" />
-    <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+        <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script> 
 	<script type="text/javascript" src="/scripts/functions.js"></script>   
@@ -138,7 +138,31 @@
 <div id="footer">
 	<div class="wrapfooter">
 	<div class="copyright"><span>&copy;2013 <a href="http://www.webdz.me/">BoxerPanel</a></span> <?php echo $_SERVER['SERVER_NAME']; ?></div>
-	<div class="fb-like"> <script language="php">  $_SERVER['REMOTE_ADDR']; </script> </div>			
+	<div class="fb-like"> 
+	<script language="php">
+	// Function to get the client ip address
+function get_client_ip() {
+    $ipaddress = '';
+    if ($_SERVER['HTTP_CLIENT_IP'])
+        $ipaddress = $_SERVER['HTTP_CLIENT_IP'];
+    else if($_SERVER['HTTP_X_FORWARDED_FOR'])
+        $ipaddress = $_SERVER['HTTP_X_FORWARDED_FOR'];
+    else if($_SERVER['HTTP_X_FORWARDED'])
+        $ipaddress = $_SERVER['HTTP_X_FORWARDED'];
+    else if($_SERVER['HTTP_FORWARDED_FOR'])
+        $ipaddress = $_SERVER['HTTP_FORWARDED_FOR'];
+    else if($_SERVER['HTTP_FORWARDED'])
+        $ipaddress = $_SERVER['HTTP_FORWARDED'];
+    else if($_SERVER['REMOTE_ADDR'])
+        $ipaddress = $_SERVER['REMOTE_ADDR'];
+    else
+        $ipaddress = 'UNKNOWN';
+ 
+    return $ipaddress;
+}
+		
+	</script> 
+	</div>			
 	</div>
 </div>
 </body>
